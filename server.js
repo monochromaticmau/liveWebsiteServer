@@ -15,7 +15,7 @@ app.use((req,res,next)=>{
     console.log(req.originalUrl)
     console.log(req.path)
     
-    //res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Origin', '*')
     next();
 })
 
